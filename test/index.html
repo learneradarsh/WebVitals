@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Vitals SDK Test</title>
+</head>
+<body>
+    <h1>Testing Web Vitals SDK</h1>
+    <script type="module" src="./web-vitals-sdk.esm.js"></script>
+    <script type="module">
+    import { WebVitalsSDK } from './web-vitals-sdk.esm.js';
+
+    const sdk = new WebVitalsSDK();
+    sdk.init();
+    sdk.getVitals((vitals) => {
+        console.log('Web Vitals:', vitals);
+    });
+</script>
+</body>
+</html>
