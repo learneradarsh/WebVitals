@@ -1,16 +1,29 @@
 import { onLCP, onFID, onCLS } from 'web-vitals';
 
+interface WebVitalsConfig {
+    enableLCP: boolean;
+    enableFID: boolean;
+    enableCLS: boolean;
+}
+
 export class WebVitalsSDK {
     private endpoint: string;
+    private config: WebVitalsConfig;
   
-    constructor(endpoint: string) {
+    constructor(endpoint: string, config?: Partial<WebVitalsConfig>) {
       this.endpoint = endpoint;
+      this.config = {
+        enableLCP: true,
+        enableFID: true,
+        enableCLS: true,
+        ...config,
+      };
     }
   
     init() {
-      this.trackLCP();
-      this.trackFID();
-      this.trackCLS();
+        if (this.config.enableLCP) this.trackLCP();
+        if (this.config.enableFID) this.trackFID();
+        if (this.config.enableCLS) this.trackCLS();
     }
   
     private sendMetric(name: string, value: number, id: string) {
