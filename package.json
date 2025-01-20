@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/learneradarsh/WebVitals/issues"
   },
-  "homepage": "https://github.com/learneradarsh/WebVitals#readme"
+  "homepage": "https://github.com/learneradarsh/WebVitals#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "web-vitals": "^4.2.4"
+  }
 }
