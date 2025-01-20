@@ -1,5 +1,5 @@
 {
-  "name": "webvitals",
+  "name": "web-vitals-sdk",
   "version": "1.0.0",
   "description": "web vitals library",
   "main": "index.js",
