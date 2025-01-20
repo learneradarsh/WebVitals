@@ -30,13 +30,13 @@ Web Vitals SDK is a lightweight JavaScript library designed to help developers m
 ### Using npm
 
 ```sh
-npm install web-vitals-sdk
+npm install web-vitals-x
 ```
 
 ### Using Yarn
 
 ```sh
-yarn add web-vitals-sdk
+yarn add web-vitals-x
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ yarn add web-vitals-sdk
 #### In a Module-based Project
 
 ```js
-import WebVitalsSDK from 'web-vitals-sdk';
+import WebVitalsSDK from 'web-vitals-x';
 
 const sdk = new WebVitalsSDK();
 sdk.init();
@@ -68,7 +68,7 @@ sdk.getVitals((vitals) => {
 </head>
 <body>
     <h1>Testing Web Vitals SDK</h1>
-    <script src="./web-vitals-sdk.cjs.js"></script>
+    <script src="./web-vitals-x.cjs.js"></script>
     <script>
         const sdk = new WebVitalsSDK();
         sdk.init();
@@ -130,8 +130,8 @@ npm run build
 
 The output files will be generated in the `dist/` folder:
 
-- `web-vitals-sdk.cjs.js` (CommonJS format)
-- `web-vitals-sdk.esm.js` (ES Module format)
+- `web-vitals-x.cjs.js` (CommonJS format)
+- `web-vitals-x.esm.js` (ES Module format)
 
 ## License
 
