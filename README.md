@@ -1,4 +1,5 @@
-Web Vitals SDK
+# Web Vitals SDK
+[![npm version](https://badge.fury.io/js/web-vitals-x.svg)](https://www.npmjs.com/package/web-vitals-x)
 
 ## Table of Contents
 
